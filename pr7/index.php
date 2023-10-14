@@ -1,24 +1,25 @@
-<html lang="ru">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Форма регистрации</title>
-    </head>
-    <body>
-        <form action="actions.php" method="post">
-          <label for="mail">Почта
-             <input type="email" name="email" placeholder="E-mail" required></label><br><br>
-          
-           <label for="login">Логин
-             <input type="text" name="login" placeholder="login" required></label><br><br>
-          
-          <label for="password">Пароль
-             <input type="password" name="password" placeholder="Пароль" required ></label><br><br>
-          
-                <label for="password">Подтверждение пароля
-             <input type="password" name="password2" placeholder="Подтверждение пароля" required ></label><br><br>
-          
-            <p><input type ="submit" value="Зарегестрироваться" required</p> 
-        </form>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="otv\2otvet.php" method="post">
+        <div class="container">
+          <h1>Авторизация</h1>
+          <hr>
+
+          <label for="login"><b>Login</b></label><br>
+          <input type="text" placeholder="Enter Login or Email" name="login" required><br>
+
+          <label for="psw"><b>Password</b></label><br>
+          <input type="password" placeholder="Enter Password" name="psw" required><br>
+
+          <button type="submit" class="registerbtn">Войти</button>
+        </div>
+      </form>
+</body>
 </html>
